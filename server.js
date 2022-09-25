@@ -1,4 +1,4 @@
-require('dotenv').config
+require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,7 +10,7 @@ const TravelCard = require('./models/travel-card.js');
 //Port
 //___________________
 // Allow use of Heroku's port or your own local port, depending on the environment
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT 
 
 
 app.use(express.json());
